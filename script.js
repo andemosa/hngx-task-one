@@ -8,7 +8,7 @@ function displayDateTime() {
     weekday: "long",
   });
 
-  const currentTimeInMilliseconds = Date.now();
+  const currentTimeInMilliseconds = currentDate.toISOString();
 
   dayElem.textContent = `Current Day of the week: ${dayOfWeek}`;
 
